@@ -11,7 +11,7 @@ body{
 
 header{
     height: 100vh;
-    width: 100vw;
+    width: 50vw;
     background-size: cover;
 }
 
@@ -20,12 +20,12 @@ header{
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    width: 100px;
+    /* width: 100px; */
     box-sizing: border-box;
 }
 
 .navbar a{
-    color: pink;
+    color: gray;
 }
 
 .navbar .nav-links{
@@ -41,9 +41,8 @@ header{
 }
 
 .navbar .nav-links ul li.active a{
-    color:rebeccapurple;
+    color: #4d86c2;
     font-weight: 600;  
-    /* modifie la couleur et la taille du lien actif */
 }
 
 .navbar .menu-burger{
