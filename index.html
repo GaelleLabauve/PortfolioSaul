@@ -15,6 +15,22 @@
     </script>
 </head>
 <body>
-    <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."header.html"); ?>
+    <div id="header"></div>
+
+    <script>
+        fetch('assets/php/header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur de chargement du header');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+            });
+    </script>
 </body>
 </html>
