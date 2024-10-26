@@ -25,6 +25,7 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: var(--base-size);
+    background-color: #ecf0f1;
 }
 
 h1{
@@ -141,6 +142,8 @@ header{
 /* ==================== */
 /*      ILLUSTRATION    */
 /* ==================== */
+
+/*      Slider    */
 .image-box{
     width: 100%;
     justify-content: center;
@@ -149,14 +152,14 @@ header{
 }
 
 .image-box input[type="radio"]{
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
     display: inline-block;
     outline: none;
     appearance: none;
     cursor: pointer;
     opacity: 0.5;
-    margin: 0 5px;
+    margin: 0 2px;
     
 }
 
@@ -174,6 +177,7 @@ header{
     background-position: center;
 }
 
+/*      Gaelerie    */
 .galerie{
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +189,7 @@ header{
 
 .gallery-item {
     flex-basis: 32.7%;
-    margin-bottom: 6px;
+    margin: 2px;
     cursor: pointer;
 }
 
@@ -194,15 +198,19 @@ header{
 }
 
 .gallery-item img{
-    padding: 2px;
-    max-width: 500px;
-    max-height: 200px;
+    /* padding: 2px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* max-width: 500px;
+    max-height: 200px; */
 }
+
 
 .lightbox{
     position: fixed;
     display: none;
-    background-color: #4d86c2;
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -215,4 +223,52 @@ header{
     width: 65%;
     height: 58%;
     margin: 5% auto;
+}
+
+.lightbox-content img{
+    width: 100%;
+    height: 100%;
+}
+.lightbox-prev, .lightbox-next{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0, 0.8);
+    color: #fff;
+    padding: 9px;
+    top: 45%;
+    cursor: pointer;
+    
+}
+
+.lightbox-prev{
+    left: 0;
+}
+
+.lightbox-next{
+    right: 0;
+}
+
+/* gallery lightbox respnsive */
+@media(max-width:767px){
+    .galerie{
+        width: 100%;
+    }
+    .gallery-item{
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content{
+        width: 80%;
+        height: 60%;
+        margin: 15% auto;
+    }
+}
+@media(max-width:480px){
+    .gallery-item{
+        flex-basis: 100%;
+        margin-bottom: 1px;
+    }
+    .lightbox-content{
+        width: 90%;
+        margin: 20% auto;
+    }
 }
