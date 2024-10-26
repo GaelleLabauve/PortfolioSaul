@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap');
+
+.cover{
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+    padding: 50px;
+}
+
+.book{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 60%;
+}
+
+.page{
+    width: 50%;
+    text-align: center;
+    background-size: cover;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .3);
+    background-color: #F5F5F5;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    color: rgb(57, 57, 57);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 50px;
+}
