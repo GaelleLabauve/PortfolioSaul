@@ -42,8 +42,8 @@ lightBoxNext.classList.add('fa', 'fa-angle-right','lightbox-next')
 
 lightBoxcontainer.appendChild(lightBoxContent);
 lightBoxContent.appendChild(lightBoxImg);
-lightBoxContent.appendChild(lightBoxPrev);
-lightBoxContent.appendChild(lightBoxNext);
+lightBoxcontainer.appendChild(lightBoxPrev);
+lightBoxcontainer.appendChild(lightBoxNext);
 document.body.appendChild(lightBoxcontainer);
 
 index = 1;
@@ -60,7 +60,7 @@ function showLightBox(n){
 }
 
 function currentImage(){
-    lightBoxcontainer.style.display="block";
+    lightBoxcontainer.style.display="flex";
 
     let imageIndex = parseInt(this.getAttribute("data-index"));
     showLightBox(index = imageIndex)
