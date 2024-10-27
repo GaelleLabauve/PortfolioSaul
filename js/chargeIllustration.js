@@ -6,7 +6,7 @@ const images = [
     'illu1.JPG',
     'illu2.JPG',
     'illu3.png',
-    'menu.png'
+    'chat_bain.png'
 ];
 
 const imageContainer = document.querySelector('.galerie');
