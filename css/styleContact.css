@@ -1,17 +1,7 @@
-@import url(variable.css);
 @import url(style2.css);
 
-.cover{
-    width: 100%;
-    max-width: 100vw;
-    height: 100%;
-    justify-content: center;
+.container {
     display: flex;
-    box-sizing: border-box;
-}
-
-.book{
-    display: flex;
-    flex-direction: row;
-    padding: 7rem 5rem;
+    flex-wrap: wrap;
+    margin: 0;
 }

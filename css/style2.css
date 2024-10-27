@@ -3,7 +3,7 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-
+    margin: 80px;
 }
 
 .child {
@@ -16,7 +16,7 @@
 }
 
 /* Responsive design */
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
     .child {
         flex: 0 0 50%; /* Chaque div prend 50% de l'espace */
     }
@@ -31,7 +31,7 @@ img{
 /* FORM */
 form{
     background-color: var(--dark-text);
-    width: 100%;
+    max-width: 100%;
 }
 
 .text-center{
@@ -122,7 +122,7 @@ label i{
 }
 
 /* Responsive reseau */
-@media (width<700px) {
+@media (width<800px) {
     .contact-info{
         flex-direction: column;
     }
