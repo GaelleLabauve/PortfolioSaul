@@ -5,8 +5,8 @@
 const images = [
     'avatar.jpg',
     'banner.jpg',
-    'BD_tablau_Page1.jpg',
-    'BD_tablau_Page2.jpg',
+    'BD_tablaux_Page1.jpg',
+    'BD_tablaux_page2.jpg',
     'BD_tablau_Page3.jpg',
     'caracter_saul.jpg',
     'chat_bain.png',
