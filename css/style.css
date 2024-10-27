@@ -1,9 +1,12 @@
 :root {
     /* colors */
-    --body-bg: #FAFAFA;
+    --body-bg: #ecf0f1;
     --page-bg: #F5F5F5;
     --dark-text: #2A2935;
+    --white-text : #fff;
     --active-link: #4d86c2;
+    --banner-bg : url(../images/banner.jpg);
+    --cover-book : #8B4513;
   
     /* spacing */
     --baseline: 12px;
@@ -25,7 +28,7 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: var(--base-size);
-    background-color: #ecf0f1;
+    background-color: var(--body-bg);
 }
 
 h1{
@@ -62,11 +65,11 @@ p{
 /* ==================== */
 header{
     position: relative;
-    height: 30vh;
-    width: 100vw;
+    height: 60vh;
+    width: 100%;
     background-size: cover;
-    background-position: center;
-    background-image: url(../images/chat_bain.png);
+    background-position: bottom;
+    background-image: var(--banner-bg);
 }
 
 .navbar{
@@ -77,7 +80,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(171, 135, 135, 0.5);
 }
 
 .navbar a{
@@ -101,13 +103,14 @@ header{
 }
 
 .navbar .menu-burger{
-    color: #fff;
+    color: var(--dark-text);
     display: none;
     position: absolute;
     right: 50px;
     width: 35px;
 }
 
+/* RESPONSIVE */
 @media screen and (max-width: 600px){
     .navbar{
         padding: 0;
@@ -127,6 +130,7 @@ header{
         align-items: center;
         margin-left: -100%;
         transition: all 0.5s ease;
+        background-image: var(--banner-bg);
     }
 
     .nav-links.mobile-menu{
@@ -241,7 +245,7 @@ header{
 .lightbox-prev, .lightbox-next{
     position: absolute;
     background-color: rgba(0, 0, 0, 0, 0.8);
-    color: #fff;
+    color: var(--white-text);
     padding: 9px;
     top: 45%;
     cursor: pointer;

@@ -3,10 +3,10 @@
 /*      GALERIE         */
 /* ==================== */
 const images = [
-    'illu1.JPG',
-    'illu2.JPG',
-    'illu3.png',
-    'chat_bain.png'
+    'chat_bain.png',
+    'banner.jpg',
+    'caracter_saul.jpg',
+    'avatar.jpg'
 ];
 
 const imageContainer = document.querySelector('.galerie');
@@ -103,9 +103,9 @@ lightBoxcontainer.addEventListener("click", closeLightBox);
 /*      SLIDER          */
 /* ==================== */
 const imgSlider = [
-    'illu1.JPG',
-    'illu2.JPG',
-    'illu3.png'
+    'banner.jpg',
+    'caracter_saul.jpg',
+    'avatar.jpg'
 ]
 
 const imagebox = document.querySelector('.image-box');

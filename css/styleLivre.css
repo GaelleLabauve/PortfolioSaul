@@ -90,7 +90,7 @@ img{
 .open-book .chapter-title {
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2NCA2NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjQgNjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8Zz4NCiAgICAJPHBhdGggZD0iTTAsMzJMMzIsMGwzMiwzMkwzMiw2NEwwLDMyeiBNOCwzMmwyNCwyNGwyNC0yNEwzMiw4TDgsMzJ6IE0xNiwzMmwxNi0xNmwxNiwxNkwzMiw0OEwxNiwzMnogTTI0LDMybDgsOGw4LThsLTgtOEwyNCwzMnoiIC8+DQogICAgPC9nPg0KPC9zdmc+) bottom center no-repeat;
     background-size: 0.5em 0.5em;
-    font: 700 7vw/1.25 'Playfair Display', sans-serif;
+    font: 700 5vw/1.25 'Playfair Display', sans-serif;
     letter-spacing: 0.125em;
     margin: 0 0 1em 0;
     padding: 1em 0;
@@ -223,8 +223,9 @@ img{
         position: relative;
     }
 
+    /* Couverture arrière du livre */
     .open-book:before {
-        background-color: #8B4513;
+        background-color: var(--cover-book); 
         border-radius: 0.25em;
         bottom: -1em;
         content: '';
@@ -235,6 +236,7 @@ img{
         z-index: -1;
     }
 
+    /* Ombre entre les deux pages */
     .open-book:after {
         background: linear-gradient(to right, transparent 0%,rgba(0,0,0,0.2) 46%,rgba(0,0,0,0.5) 49%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.5) 51%,rgba(0,0,0,0.2) 52%,transparent 100%);
         bottom: -1em;
@@ -247,6 +249,7 @@ img{
         z-index: 1;
     }
 
+    /* Séparation en deux colonne pour faire deux pages */
     .open-book > * {
         column-count: 2;
         column-gap: 6em;
@@ -255,6 +258,8 @@ img{
     }
 
     /* Header/Footer */
+
+    /*Effet arrondi au milieu*/
     .open-book header:before,
     .open-book header:after,
     .open-book footer:before,
@@ -268,6 +273,7 @@ img{
         width: calc(50% + 2em);
     }
 
+    /* bout des page non arrondi haut */
     .open-book header:before,
     .open-book footer:before,
     .open-book footer:after {
@@ -280,6 +286,7 @@ img{
         border-top-right-radius: 0;
     }
 
+    /* bout des page non arrondi bas */
     .open-book header:before,
     .open-book header:after,
     .open-book footer:after {
