@@ -3,10 +3,16 @@
 /*      GALERIE         */
 /* ==================== */
 const images = [
-    'chat_bain.png',
+    'avatar.jpg',
     'banner.jpg',
+    'BD_tablau_Page1.jpg',
+    'BD_tablau_Page2.jpg',
+    'BD_tablau_Page3.jpg',
     'caracter_saul.jpg',
-    'avatar.jpg'
+    'chat_bain.png',
+    'couverture.jpg',
+    'nain.jpg',
+    'rouge_chat.jpg'
 ];
 
 const imageContainer = document.querySelector('.galerie');
