@@ -6,7 +6,7 @@
     --white-text : #fff;
     --active-link: #4d86c2;
     --banner-bg : url(../images/banner.jpg);
-    --cover-book : #8B4513;
+    --nav-bg :rgba(0, 0, 0, 0.6);;
   
     /* spacing */
     --baseline: 12px;
@@ -82,7 +82,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--nav-bg);
 }
 
 .navbar a{
@@ -133,7 +133,7 @@ header{
         align-items: center;
         margin-left: -100%;
         transition: all 0.5s ease;
-        background-image: var(--banner-bg);
+        background-color: var(--nav-bg);
     }
 
     .nav-links.mobile-menu{
