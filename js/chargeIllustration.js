@@ -107,7 +107,9 @@ lightBoxcontainer.addEventListener("click", closeLightBox);
 /*      SLIDER          */
 /* ==================== */
 const imgSlider = [
-    'caracter_saul.jpg',
+    'BD_tablaux_Page1.jpg',
+    'BD_tablaux_page2.jpg',
+    'BD_tablau_Page3.jpg',
 ]
 
 const imagebox = document.querySelector('.image-box');
