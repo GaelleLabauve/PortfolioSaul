@@ -2,21 +2,29 @@
 
 :root {
     /* colors */
-    --body-bg: #FAFAFA;
+    --body-bg: #ecf0f1;
     --page-bg: #F5F5F5;
-    --dark-text: #2A2935;
-    
+    --dark-text: #323433;
+    --white-text : #fff;
+    --active-link: #4d86c2;
+    --banner-bg : url(../images/banner.jpg);
+    --nav-bg :rgba(0, 0, 0, 0.6);;
+  
     /* spacing */
-    /* this is what defines the global scale */
     --baseline: 12px;
-    
+  
     /* fonts */
     --book-title: 'Tulpen One', sans-serif;
     --title: 'Cormorant Garamond', serif;
     --body: 'Cormorant Garamond', serif;
     --base-size: var(--baseline) * 1.2;
-    --book-title-size: var(--baseline) * 14.2;
   }
+
+.contact-link{
+    color: var(--white-text);
+    text-decoration: none;
+    display: inline-block;
+}
 
 .cover{
     width: 100vw;
@@ -44,7 +52,7 @@
     background-color: #F5F5F5;
     flex-direction: column;
     font-family: var(--title); 
-    font-size: 12px;
+    font-size: var(--base-size);
     overflow: hidden;
 }
 
@@ -56,7 +64,7 @@
 .page-right{    
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: #323433;
+    background-color: var(--dark-text);
     color: white;
 }
 
@@ -85,15 +93,19 @@ img{
 }
 
 .title{
-    color: rgb(57, 57, 57);
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    color: var(--white-text);
+    border-top: 2px solid var(--white-text);
+    border-bottom: 2px solid var(--white-text);
     margin-top: 10px;
     font-family: var(--title);
 }
 
 .book-title{
-    color: black;
+    color: var(--white-text);
     font-family: var(--book-title);
     font-size  : 34px;
+}
+
+h2{
+    font-size: var(--base-size);
 }

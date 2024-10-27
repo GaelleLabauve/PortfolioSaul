@@ -263,7 +263,7 @@ header{
     right: 0;
 }
 
-/* gallery lightbox respnsive */
+/* gallery lightbox responsive */
 @media(max-width:767px){
     .galerie{
         width: 100%;
