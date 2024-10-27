@@ -3,8 +3,6 @@
 /*      GALERIE         */
 /* ==================== */
 const images = [
-    'avatar.jpg',
-    'banner.jpg',
     'BD_tablaux_Page1.jpg',
     'BD_tablaux_page2.jpg',
     'BD_tablau_Page3.jpg',
@@ -109,9 +107,7 @@ lightBoxcontainer.addEventListener("click", closeLightBox);
 /*      SLIDER          */
 /* ==================== */
 const imgSlider = [
-    'banner.jpg',
     'caracter_saul.jpg',
-    'avatar.jpg'
 ]
 
 const imagebox = document.querySelector('.image-box');
