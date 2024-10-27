@@ -5,45 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styleOpenBook.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     
     <div id="header"></div>
 
-    <div class="cover">
-        <div class="book">
-            <div class="page page-left">
-                <img src="images/caracter_saul.jpg" alt="image">                
-            </div>
-            <div class="page page-right">
+    <div class="container">
+        <div class="child">
+            <img src="images/caracter_saul.jpg" alt="image">   </div>
+        <div class="child">
+            <form action="">
+                <h1 class="title">Contactez moi</h1>
 
-                <div class="page-header">
-                    <h1 class="book-title">SOLLENOGA</h1>
-                    <h1 class="title">SOLENE LABAUVE</h1>
-                </div>
+                <!-- Name -->
+			    <div class="form-group position-relative">
+			    	<label for="formName" class="d-block">
+                        <i class="fa-light fa-user icon"></i>
+			    	</label>
+			    	<input type="text" id="formName" class="entree" placeholder="Name">
+			    </div>
 
-                <div class="page-content">
+                <!-- E-mail -->
+                <div class="form-group">
+                    <label for="formEmail" class="d-block">
+                        <i class="fa-regular fa-envelope icon"></i>
+                        <i class="icon" data-feather="mail"></i>
+                    </label>
+                    <input type="email" id="formEmail" class="entree" placeholder="E-mail">
+                </div>               
 
-                    <h2>INSTAGRAM</h2>
-                    <a href="https://www.instagram.com/sellenoga/?utm_source=ig_web_button_share_sheet">Sellenoga</a>
-
-                    <h2>MAIL</h2>
-                    <p>sellenoga@gmail.com</p>
-                    <!-- idée d'amélioration : un bouton contact qui tourne la page et mène à un form de contact de mail -->
-
-                    <h2>LINKEDIN</h2>
-                    <a href="https://www.linkedin.com/in/sellen-oga/"><h3>Sellen-oga</h3></a>
-
-                </div>
-
-                <div class="page-footer">
-                    <h2>ARTIST BANDE DESSINEE</h2>
-                    <h2>& ECRIVAINE</h2>
-                </div>
-            </div>
+			    <!-- Message -->
+			    <div class="form-group message">
+			    	<textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="Message"></textarea>
+			    </div>
+            </form>
         </div>
     </div>
+    
     
     <script src="js/script.js"></script>
 

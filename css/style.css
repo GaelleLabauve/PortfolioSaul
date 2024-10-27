@@ -1,23 +1,5 @@
-:root {
-    /* colors */
-    --body-bg: #ecf0f1;
-    --page-bg: #F5F5F5;
-    --dark-text: #2A2935;
-    --white-text : #fff;
-    --active-link: #4d86c2;
-    --banner-bg : url(../images/banner.jpg);
-    --nav-bg :rgba(0, 0, 0, 0.6);;
-  
-    /* spacing */
-    --baseline: 12px;
-  
-    /* fonts */
-    --book-title: 'Tulpen One', sans-serif;
-    --title: 'Cormorant Garamond', serif;
-    --body: 'Cormorant Garamond', serif;
-    --base-size: var(--baseline) * 1.2;
-  }
-  
+@import url(variable.css) ;
+
 *{
     margin: 0;
     padding: 0;
