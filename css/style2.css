@@ -1,19 +1,21 @@
 @import url(variable.css);
 
 .container {
-    display: flex; /* Active le modèle Flexbox */
-    flex-wrap: wrap; /* Permet aux éléments de se placer sur plusieurs lignes */
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .child {
     flex: 1; /* Prend l'espace disponible de manière égale */
-    box-sizing: border-box; /* Inclut padding et border dans les dimensions */
-    padding: 20px; /* Espacement intérieur */
+    box-sizing: border-box;
+    padding: 20px;
     background-color: var(--dark-text);
     flex: 0 0 100%;
+    align-content: center;
 }
 
-/* Styles pour les écrans supérieurs à 1200px */
+/* Responsive design */
 @media (min-width: 1200px) {
     .child {
         flex: 0 0 50%; /* Chaque div prend 50% de l'espace */
@@ -21,7 +23,7 @@
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
 }
 
@@ -29,14 +31,17 @@ img{
 /* FORM */
 form{
     background-color: var(--dark-text);
-	min-width: 25rem;
     width: 100%;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .title {
     font-family: 'Pacifico', cursive;
     color: var(--white-text);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .form-group{
@@ -52,17 +57,76 @@ form{
     background-color: transparent;
     border: none;
     padding: .5rem 1.8rem;
+    width: 100%;
+    outline: none;
 }
-
-.icon {
-    color: #57565c;
-    height: 1.3rem;
-    position: absolute;
-    left: 1.5rem;
-    top: 1.1rem;
-  }
 
 .message .form-control {
     padding: .5rem 1.8rem;
     width: 100%;
+    outline: none;
+}
+
+.btn.btn-primary {
+    font-family:var(--round-title);
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+    background-image:linear-gradient(131deg, #0c6812, #478405, #717911, #ff3cc4);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+    box-shadow: 0 0.5em 0.5em -0.4em #ff3ca7ba;
+    background-size: 100% 100%;
+    transform: translateY(-0.15em);
+}
+label {
+    position:static;
+    padding: 10px 0;
+}
+label i{
+    font-size: 1.3rem;
+}
+
+/* CONTENT */
+.book-title{
+    color: var(--white-text);
+    font-family: var(--book-title);
+    font-size  : 3.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 1px solid var(--white-text);
+    padding: 2rem;
+}
+
+.reseau{
+    color: var(--white-text);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--round-title);
+}
+
+.reseau i{
+    font-size: 4rem;
+}
+
+/* Responsive reseau */
+@media (width<700px) {
+    .contact-info{
+        flex-direction: column;
+    }
+    .reseau{
+        margin-top: 1.5rem;
+    }
 }

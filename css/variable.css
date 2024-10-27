@@ -15,6 +15,7 @@
     --baseline: 12px;
   
     /* fonts */
+    --round-title: 'Quicksand', sans-serif;
     --book-title: 'Tulpen One', sans-serif;
     --title: 'Cormorant Garamond', serif;
     --body: 'Cormorant Garamond', serif;
