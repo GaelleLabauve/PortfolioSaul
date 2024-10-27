@@ -70,6 +70,8 @@ header{
     background-size: cover;
     background-position: bottom;
     background-image: var(--banner-bg);
+    align-content: end;
+    display: block;
 }
 
 .navbar{
@@ -80,10 +82,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar a{
-    color: var(--dark-text);
+    color: var(--white-text);
 }
 
 .navbar a:hover{
@@ -103,7 +106,7 @@ header{
 }
 
 .navbar .menu-burger{
-    color: var(--dark-text);
+    color: var(--white-text);
     display: none;
     position: absolute;
     right: 50px;
