@@ -19,5 +19,6 @@
     --book-title: 'Tulpen One', sans-serif;
     --title: 'Cormorant Garamond', serif;
     --body: 'Cormorant Garamond', serif;
-    --base-size: var(--baseline) * 1.2;
+    --base-size: 1,2.5rem;
+    /* --base-size: var(--baseline) * 1.2; */
   }

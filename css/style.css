@@ -70,6 +70,7 @@ header{
 
 .navbar a{
     color: var(--white-text);
+    font-size: 1.2rem;
 }
 
 .navbar a:hover{
