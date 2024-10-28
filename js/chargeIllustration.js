@@ -54,3 +54,40 @@ imgSlider.forEach(image => {
 
     imagebox.appendChild(radioElement);
 });
+
+//Defilement automatique
+const radios = document.querySelectorAll('input[type="radio"]');
+console.log(radios)
+const pauseButton = document.getElementById('pauseButton');
+let currentIndex = 0;
+let intervalId;
+
+function autoSelectRadio() {
+    console.log("entre radio")
+    radios.forEach(radio => radio.checked = false);
+    radios[currentIndex].checked = true;
+    imagebg.style.backgroundImage = radios[currentIndex].style.backgroundImage;
+    currentIndex = (currentIndex + 1) % radios.length;
+}
+
+function startAutoSelect() {
+    intervalId = setInterval(autoSelectRadio, 3000);
+}
+
+function pauseAutoSelect() {
+    clearInterval(intervalId);
+}
+
+// bouton de pause
+pauseButton.addEventListener('click', () => {
+    if (pauseButton.classList.contains("fa-pause")) {
+        pauseAutoSelect();
+        pauseButton.classList.replace("fa-pause", "fa-play");
+    } else {
+        startAutoSelect();
+        pauseButton.classList.replace("fa-play", "fa-pause");
+    }
+});
+
+// Démarre le défilement automatique
+startAutoSelect();

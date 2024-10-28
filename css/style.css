@@ -171,6 +171,24 @@ header{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pauseButton{
+    display: none;
+    background-color: var(--nav-bg);
+    color: var(--white-text);
+    font-size: 100%;
+    padding: 1%;
+    border-radius: 50%;
+}
+
+.image-bg:hover{
+    #pauseButton{
+        display: block;
+    }
 }
 
 /*      Gaelerie    */
