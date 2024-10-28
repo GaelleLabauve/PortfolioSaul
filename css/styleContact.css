@@ -90,7 +90,7 @@ form{
 }
 
 .btn.btn-primary:hover:enabled {
-    box-shadow: 0 0.5em 0.5em -0.4em #803B54;
+    box-shadow: 0 0.5em 0.7em -0.2em #803B54;
     background-size: 100% 100%;
     transform: translateY(-0.15em);
     cursor: pointer;
