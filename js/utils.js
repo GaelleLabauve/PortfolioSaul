@@ -62,9 +62,7 @@ export function gallery(images){
         showLightBox(index = imageIndex)
     }
 
-    console.log(galleryItem)
     for (let i= 0; i<galleryItem.length; i++){
-        console.log("entre")
         galleryItem[i].addEventListener("click", currentImage);
     }
 
@@ -116,7 +114,6 @@ export function header(){
                 menuHamburger.children[0].classList.replace('fa-bars', 'fa-xmark')
             }
             else{
-                console.log("contient pas")
                 menuHamburger.children[0].classList.replace('fa-xmark', 'fa-bars')                
             }
         })
