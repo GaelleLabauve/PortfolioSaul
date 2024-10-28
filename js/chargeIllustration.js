@@ -6,14 +6,17 @@ header();
 /*      GALERIE         */
 /* ==================== */
 const images = [
+    'AduteV2.jpg',
     'BD_tablaux_Page1.jpg',
     'BD_tablaux_page2.jpg',
     'BD_tablau_Page3.jpg',
     'caracter_saul.jpg',
-    'chat_bain.png',
+    'carreV2.jpg',
+    'CHAT_M_1.jpg',
     'couverture.jpg',
     'nain.jpg',
-    'rouge_chat.jpg'
+    'rouge_chat.jpg',
+    'the_partiV2.jpg'
 ];
 
 gallery(images);
