@@ -84,7 +84,7 @@ form{
     padding: 0 3rem;
     border: 0;
     border-radius: 3rem;
-    background-image:linear-gradient(131deg, #09401F, #188D2C, #FDD155, #C77495);
+    background-image:linear-gradient(131deg, #09401F, #188D2C, #C77495 75%);
     background-size: 300% 100%;
     transition: all 0.3s ease-in-out;
 }
