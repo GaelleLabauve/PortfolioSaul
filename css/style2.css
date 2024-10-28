@@ -7,18 +7,20 @@
 }
 
 .child {
-    flex: 1; /* Prend l'espace disponible de manière égale */
+    flex: 1;
     box-sizing: border-box;
     padding: 20px;
     background-color: var(--dark-text);
-    flex: 0 0 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
     align-content: center;
 }
 
 /* Responsive design */
-@media (width >= 1200px) {
+@media (width <= 1200px) {
     .child {
-        flex: 0 0 50%; /* Chaque div prend 50% de l'espace */
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
@@ -113,7 +115,7 @@ label i{
 .reseau{
     color: var(--white-text);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--round-title);
 }
 
@@ -125,6 +127,7 @@ label i{
 @media (width<800px) {
     .contact-info{
         flex-direction: column;
+        padding: 0;
     }
     .reseau{
         margin-top: 1.5rem;
