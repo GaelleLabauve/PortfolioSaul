@@ -84,13 +84,13 @@ form{
     padding: 0 3rem;
     border: 0;
     border-radius: 3rem;
-    background-image:linear-gradient(131deg, #0c6812, #478405, #717911, #ff3cc4);
+    background-image:linear-gradient(131deg, #09401F, #188D2C, #FDD155, #C77495);
     background-size: 300% 100%;
     transition: all 0.3s ease-in-out;
 }
 
 .btn.btn-primary:hover:enabled {
-    box-shadow: 0 0.5em 0.5em -0.4em #ff3ca7ba;
+    box-shadow: 0 0.5em 0.5em -0.4em #803B54;
     background-size: 100% 100%;
     transform: translateY(-0.15em);
     cursor: pointer;
