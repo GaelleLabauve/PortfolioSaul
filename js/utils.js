@@ -111,7 +111,14 @@ export function header(){
         const navLinks = document.querySelector(".nav-links")
 
         menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
+            navLinks.classList.toggle('mobile-menu')
+            if(navLinks.classList.contains('mobile-menu')){
+                menuHamburger.children[0].classList.replace('fa-bars', 'fa-xmark')
+            }
+            else{
+                console.log("contient pas")
+                menuHamburger.children[0].classList.replace('fa-xmark', 'fa-bars')                
+            }
         })
 
         
