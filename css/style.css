@@ -318,6 +318,12 @@ header{
     transform: rotateY(180deg);
 }
 
+/* force le front a ce cacher (moche mais fonctionnel) */
+.card.flipped .card-front{
+    visibility: hidden;
+    transition: transform 0.9s;;
+}
+
 .card-front {
     position: absolute;
     width: 100%;
