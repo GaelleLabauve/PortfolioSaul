@@ -302,8 +302,15 @@ header{
 /* ==================== */
 
 .card {
-    width: 100%;
+    width: 70%;
     perspective: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){
+    .card{
+        width: 100%;
+    }
 }
 
 .card-inner {
