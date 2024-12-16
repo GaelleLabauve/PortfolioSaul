@@ -3,17 +3,21 @@
 /*      ET LIGHTBOX     */
 /* ==================== */
 export function gallery(images){
-    
     // met en place  dans galerie les images
     const imageContainer = document.querySelector('.galerie');
     const galleryItem = [];
     let index = 1;
     images.forEach(image => {
+        //determine si image ou video
+        const elementType = 'img'
+        let type = image.slice(-3);
+        if(type == 'mp4')
+            elementType = 'video'
         const divElement = document.createElement('div');
         divElement.classList.add('gallery-item');
         divElement.setAttribute('data-index', index);
         index += 1;
-        const imgElement = document.createElement('img');
+        const imgElement = document.createElement(elementType);
         imgElement.src = `images/${image}`;
         imgElement.alt = image;
 
