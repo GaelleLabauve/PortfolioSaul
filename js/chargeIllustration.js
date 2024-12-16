@@ -6,21 +6,15 @@ header();
 /*      GALERIE         */
 /* ==================== */
 const images = [
-    'AduteV2.jpg',
-    'BD_tablaux_Page1.jpg',
-    'BD_tablaux_page2.jpg',
-    'BD_tablau_Page3.jpg',
+    'Labauve_Solene_AG4_Motion_Design.gif',
     'caracter_saul.jpg',
-    'carreV2.jpg',
     'CHAT_M_1.jpg',
     'couverture.jpg',
     'nain.jpg',
-    'rouge_chat.jpg',
     'the_partiV2.jpg',
     'LABAUVE_Solene_Se_Presanter_1.jpg',
     'LABAUVE_Solene_Se_Presanter_2.jpg',
     'LABAUVE_Solene_Se_Presanter_3.jpg',
-    'Labauve_Solene_AG4_Motion_Design.gif',
 ];
 
 gallery(images);
