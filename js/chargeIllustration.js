@@ -20,7 +20,7 @@ const images = [
     'LABAUVE_Solene_Se_Presanter_1.jpg',
     'LABAUVE_Solene_Se_Presanter_2.jpg',
     'LABAUVE_Solene_Se_Presanter_3.jpg',
-    'Labauve_Solene_AG4_Motion_Design.mp4',
+    'Labauve_Solene_AG4_Motion_Design.gif',
 ];
 
 gallery(images);
