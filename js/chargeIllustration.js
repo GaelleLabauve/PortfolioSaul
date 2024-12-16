@@ -17,10 +17,10 @@ const images = [
     'nain.jpg',
     'rouge_chat.jpg',
     'the_partiV2.jpg',
-    'LABAUVE_Solene_Se_Presante_1.jpg',
-    'LABAUVE_Solene_Se_Presante_2.jpg',
-    'LABAUVE_Solene_Se_Presante_3.jpg',
-    'Labauve_Solene_AG4_Motion_Design.mpg',
+    'LABAUVE_Solene_Se_Presanter_1.jpg',
+    'LABAUVE_Solene_Se_Presanter_2.jpg',
+    'LABAUVE_Solene_Se_Presanter_3.jpg',
+    //'Labauve_Solene_AG4_Motion_Design.mpg',
 ];
 
 gallery(images);
@@ -31,9 +31,9 @@ gallery(images);
 /*      SLIDER          */
 /* ==================== */
 const imgSlider = [
-    'LABAUVE_Solene_Se_Presante_1.jpg',
-    'LABAUVE_Solene_Se_Presante_2.jpg',
-    'LABAUVE_Solene_Se_Presante_3.jpg',
+    'LABAUVE_Solene_Se_Presanter_1.jpg',
+    'LABAUVE_Solene_Se_Presanter_2.jpg',
+    'LABAUVE_Solene_Se_Presanter_3.jpg',
 ]
 
 const imagebox = document.querySelector('.image-box');
